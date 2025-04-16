@@ -1,8 +1,6 @@
+import 'package:final_project/CRUD/product.dart';
+import 'package:final_project/CRUD/product_list_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:mobilelab/CRUD/add_product_list_screen.dart';
-import 'package:mobilelab/CRUD/product.dart';
-import 'package:mobilelab/CRUD/product_list_screen.dart';
-import 'package:mobilelab/CRUD/update_product_list_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
