@@ -1,4 +1,5 @@
 // Widget extraction
+
 import 'package:flutter/material.dart';
 import 'package:mobilelab/CRUD/delete_function.dart';
 import 'package:mobilelab/CRUD/product.dart';
