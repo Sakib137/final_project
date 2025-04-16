@@ -1,8 +1,14 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:final_project/BMI/input_screen.dart';
 import 'package:final_project/apps.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    DevicePreview(
+      builder: (context) => const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -38,7 +44,14 @@ class _MyWidgetState extends State<MyWidget> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const InputScreen(),
+                        ),
+                      );
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
@@ -48,7 +61,7 @@ class _MyWidgetState extends State<MyWidget> {
                       width: double.infinity,
                       child: const Center(
                         child: Text(
-                          "Calculate Your BMI Calculates the math",
+                          "Calculate Your BMI",
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
