@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    const MyApp(),
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -32,9 +30,7 @@ class _MyWidgetState extends State<MyWidget> {
       body: Expanded(
         child: Stack(
           children: [
-            Container(
-              color: const Color.fromARGB(255, 1, 46, 82),
-            ),
+            Container(color: const Color.fromARGB(255, 1, 46, 82)),
             Padding(
               padding: const EdgeInsets.all(40.0),
               child: Column(
@@ -51,17 +47,13 @@ class _MyWidgetState extends State<MyWidget> {
                       width: double.infinity,
                       child: const Center(
                         child: Text(
-                          "Calculate Your BMI",
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
+                          "Calculate Your BMI Calculates the math",
+                          style: TextStyle(color: Colors.white),
                         ),
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 50,
-                  ),
+                  const SizedBox(height: 50),
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
@@ -70,17 +62,10 @@ class _MyWidgetState extends State<MyWidget> {
                     height: 50,
                     width: double.infinity,
                     child: const Center(
-                      child: Text(
-                        "Or",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
+                      child: Text("Or", style: TextStyle(color: Colors.white)),
                     ),
                   ),
-                  const SizedBox(
-                    height: 50,
-                  ),
+                  const SizedBox(height: 50),
                   GestureDetector(
                     onTap: () {},
                     child: Container(
@@ -93,16 +78,14 @@ class _MyWidgetState extends State<MyWidget> {
                       child: const Center(
                         child: Text(
                           "Make a Product List",
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
+                          style: TextStyle(color: Colors.white),
                         ),
                       ),
                     ),
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
