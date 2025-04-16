@@ -1,6 +1,7 @@
 import 'package:final_project/CRUD/add_new_product_screen.dart';
 import 'package:final_project/CRUD/product.dart';
 import 'package:final_project/CRUD/product_list_screen.dart';
+import 'package:final_project/CRUD/update_product_list_screen.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {

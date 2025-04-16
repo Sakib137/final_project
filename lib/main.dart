@@ -1,3 +1,4 @@
+import 'package:final_project/apps.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -67,7 +68,14 @@ class _MyWidgetState extends State<MyWidget> {
                   ),
                   const SizedBox(height: 50),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const App(),
+                        ),
+                      );
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),

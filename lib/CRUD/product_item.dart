@@ -1,6 +1,8 @@
 // Widget extraction
 
+import 'package:final_project/CRUD/delete_function.dart';
 import 'package:final_project/CRUD/product.dart';
+import 'package:final_project/CRUD/update_product_list_screen.dart';
 import 'package:flutter/material.dart';
 
 class listItem extends StatelessWidget {

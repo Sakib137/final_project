@@ -135,7 +135,7 @@ class DeleteFunction {
           ],
           actionsPadding: const EdgeInsets.all(16),
         );
-      },
-    );
-  }
+      },
+    );
+  }
 }
