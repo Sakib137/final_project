@@ -1,9 +1,7 @@
 // Widget extraction
 
+import 'package:final_project/CRUD/product.dart';
 import 'package:flutter/material.dart';
-import 'package:mobilelab/CRUD/delete_function.dart';
-import 'package:mobilelab/CRUD/product.dart';
-import 'package:mobilelab/CRUD/update_product_list_screen.dart';
 
 class listItem extends StatelessWidget {
   const listItem({super.key, required this.product, required this.onRefresh});

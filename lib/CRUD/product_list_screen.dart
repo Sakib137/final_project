@@ -1,6 +1,9 @@
 import 'dart:convert';
+import 'package:final_project/CRUD/add_new_product_screen.dart';
 import 'package:final_project/CRUD/product.dart';
+import 'package:final_project/CRUD/product_item.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
 
 class ProductListScreen extends StatefulWidget {
   const ProductListScreen({super.key});
@@ -67,7 +70,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                   children: [
                     CircleAvatar(
                       radius: 30,
-                      backgroundImage: AssetImage('assests/images/sakib1.jpg'),
+                      backgroundImage: AssetImage('assets/sakib.jpg'),
                     ),
                     Text(
                       'Md Sakib Al Hasan',
